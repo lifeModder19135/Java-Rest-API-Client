@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans >
+
+	<bean id="DigitalPriceDTO" class="org.ntolb.client.model.DigitalPriceDTO">
+		<property name=""></property>
+	</bean>
+	<bean id="PortalPriceDTO" class="org.ntolb.client.model.PortalPriceDTO">
+		<property name=""></property>
+	</bean>
+	<bean id="PortalTitleDTO" class="org.ntolb.client.model.PortalTitleDTO">
+		<property name=""></property>
+	</bean>
+	<bean id="ProductData" class="org.ntolb.client.model.ProductData">
+		<property name=""></property>
+	</bean>
+	<bean id="DAO" class="org.ntolb.client.service.DAO">
+		<property name=""></property>
+	</bean>
+	<bean id="RequestBuilder" class="org.ntolb.client.service.RequestBuilder"/>
+	<bean id="TesterService" class="org.ntolb.client.test.TesterService">
+		<property name=""></property>
+	</bean>
+	
+</beans>

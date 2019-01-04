@@ -15,6 +15,8 @@ import org.ntolb.client.model.PortalTitleDTO;
 import org.ntolb.client.model.ProductData;
 import org.ntolb.client.service.Dao;
 import org.ntolb.client.service.RequestBuilder;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 //import org.ntolb.client.test.TesterService;
 
 
@@ -29,7 +31,7 @@ public class MyClient {
          * 
          * */
 
-		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Client client = ClientBuilder.newClient();
 		RequestBuilder builder = new RequestBuilder();
 		
@@ -39,9 +41,7 @@ public class MyClient {
 		List<PortalTitleDTO> books = new ArrayList<PortalTitleDTO>();
 		Dao dao = new Dao();
 		
-		System.out.println(isbnList.size());
-		
-		/*SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		
 		for (String isbn:isbnList) {
@@ -68,7 +68,6 @@ public class MyClient {
 		
 		//tester.testRequests(client, "9780787902445");
 		client.close();
-		*/
 	
 
 	}
