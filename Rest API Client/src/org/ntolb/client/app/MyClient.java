@@ -39,9 +39,7 @@ public class MyClient {
 		List<PortalTitleDTO> books = new ArrayList<PortalTitleDTO>();
 		Dao dao = new Dao();
 		
-		System.out.println(isbnList.size());
-		
-		/*SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		
 		for (String isbn:isbnList) {
@@ -68,8 +66,6 @@ public class MyClient {
 		
 		//tester.testRequests(client, "9780787902445");
 		client.close();
-		*/
-	
 
 	}
 
