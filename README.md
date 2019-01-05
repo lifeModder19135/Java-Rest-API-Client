@@ -5,3 +5,6 @@ Due to build requirements and constraints that i placed on this app (a time-sens
 
 As it is a very simple design with few dependencies, I left out Spring & Maven.
 
+Neither TesterService.java nor Book.java are used in final build. TesterService.java is exactly what it sounds like. I left it in just in case I need to make any changes. You never know. Book.java, on the other hand, is the DTO that I was using before I realized that the structure on the server contained a nested class for the price info. I just left it in to "show my work".
+ 
+
