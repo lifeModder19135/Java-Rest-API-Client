@@ -7,6 +7,15 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/*
+ *
+ * This class is not used in final build.
+ * It is the DTO that I was using before I realized that the structure
+ * on the server contained a nested class for the price info. I just 
+ * left it in to "show my work".
+ *
+ */
+
 @XmlRootElement
 @Entity
 @Table(name="BOOKS")
